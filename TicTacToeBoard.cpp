@@ -55,7 +55,7 @@ Piece TicTacToeBoard::placePiece(int row, int column)
 **/
 Piece TicTacToeBoard::getPiece(int row, int column)
 {
-  if(row>=BOARDSIZE&&column>=BOARDSIZE){/*
+  if(row>=BOARDSIZE||column>=BOARDSIZE){/*
   If either parameters are beyond the board size, invalid should be returned. As is, invalid will only be returned if both parapeters are beyond the board size.
   */
     return Invalid;
